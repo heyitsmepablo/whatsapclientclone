@@ -1,0 +1,12 @@
+div.chat-item-wrapper{
+  @apply flex h-[4.55rem] w-full   items-center pl-3 gap-x-3 border-y border-[rgb(244,244,244)];
+  div.info-wrapper{
+    @apply flex flex-col h-full w-full justify-center ;
+    h2{
+      @apply text-base font-medium
+    }
+    h3{
+      @apply text-sm
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<main>
+  <div class="window-wrapper">
+    <div class="app-wrapper">
+      <div class="app-top-wrapper">
+        <app-header></app-header>
+        <app-search-bar></app-search-bar>
+      </div>
+      <div class="app-bottom-wrapper">
+        <app-chat-list>
+          <app-chat-item [contactName]="'Atendente Virtual'" >
+            <app-avatar src="https://guide121.com/wp-content/uploads/2023/12/capa-para-artigo-assistente-virtual-whatsapp.png"></app-avatar>
+          </app-chat-item>
+        </app-chat-list>
+      </div>
+    </div>
+      <div class="chat-window">
+        <div class="chat-window-top-wrapper">
+        <app-header-chat contactName="Atendente Virtual" contactNumber="+55 98 99183-7843"></app-header-chat>
+        </div>
+        <div class="chat-window-middle-wrapper"
+         style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96e750b6-3aea-4888-983a-d8f0a10ca98d/di04w97-65e15894-7da7-4bd2-be97-0d757006cb9f.png/v1/fit/w_540,h_981,q_70,strp/signal_wallpaper_light__whatsapp_style__by_damirap_di04w97-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTgxIiwicGF0aCI6IlwvZlwvOTZlNzUwYjYtM2FlYS00ODg4LTk4M2EtZDhmMGExMGNhOThkXC9kaTA0dzk3LTY1ZTE1ODk0LTdkYTctNGJkMi1iZTk3LTBkNzU3MDA2Y2I5Zi5wbmciLCJ3aWR0aCI6Ijw9NTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.3MDLFYyOSTXtV4BXx56WkqVB_Ic3S5CaqXbnAmoS91c);"
+        >
+        <app-chat-window></app-chat-window>
+        </div>
+        <div class="chat-window-bottom-wrapper">
+        <app-chat-texting-bar></app-chat-texting-bar>
+        </div>
+    </div>
+  </div>
+</main>

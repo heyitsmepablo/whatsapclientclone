@@ -1,0 +1,34 @@
+div.header-chat-container{
+  @apply flex h-14 bg-[rgb(238,238,238)] px-4 items-center justify-between;
+
+  div.header-contact-wrapper{
+    @apply flex items-center gap-4 h-full;
+    div.header-contact-info-wrapper{
+
+      h3{
+        @apply font-medium ;
+      }
+
+      h5{
+        @apply text-xs
+      }
+
+    }
+  }
+
+
+
+  div.options{
+    @apply flex  h-full items-center gap-4;
+
+    svg.options{
+      @apply  rotate-90 w-6 h-6 text-[rgb(152,152,152)]
+    }
+
+    svg.lupa{
+      @apply w-5 h-5 text-[rgb(152,152,152)]
+    }
+
+  }
+
+}

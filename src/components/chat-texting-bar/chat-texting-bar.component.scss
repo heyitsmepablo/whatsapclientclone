@@ -1,0 +1,12 @@
+div.chat-text-bar-container{
+  @apply flex h-16 w-full bg-[rgb(241,241,241)] items-center gap-4 px-4 ;
+
+  label{
+    @apply flex bg-white w-full h-10   rounded-full px-4
+  }
+
+  input{
+    @apply outline-none w-full
+  }
+
+}

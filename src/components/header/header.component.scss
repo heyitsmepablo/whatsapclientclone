@@ -1,0 +1,5 @@
+div{
+    &.header-menu{
+      @apply flex h-14 w-96 bg-[rgb(238,238,238)] items-center px-4
+    }
+}

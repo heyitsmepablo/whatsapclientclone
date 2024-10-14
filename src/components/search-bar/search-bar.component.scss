@@ -1,0 +1,15 @@
+div{
+  &.search-bar-wrapper{
+    @apply flex h-10 w-96 bg-[rgb(244,244,244)] justify-center items-center;
+    >label {
+      @apply bg-white flex  w-[22rem] h-7 rounded-full items-center px-4 gap-4;
+      svg.lupa{
+        @apply w-[0.85rem] h-[0.85rem] text-slate-500
+      }
+      input{
+        @apply outline-none text-sm w-[17rem]
+      }
+    }
+  }
+
+}

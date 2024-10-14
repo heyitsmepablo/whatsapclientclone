@@ -1,0 +1,46 @@
+/* chat.component.scss */
+div.chat-container{
+  @apply flex flex-col justify-end h-full  w-full p-4 overflow-y-auto overflow-x-hidden gap-2;
+}
+
+div.message{
+
+  &.sent{
+    @apply flex justify-end w-full pr-2;
+
+    div.message-bubble{
+      @apply bg-white flex text-end relative h-fit w-fit max-w-96 py-2 px-4 rounded-s-md rounded-ee-md animate-fade-up;
+
+    }
+
+    div.message-bubble::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -10px; /* Posiciona a cauda à direita */
+      border-width: 0px 0px 10px 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent white; /* Cor da cauda azul */
+    }
+  }
+
+  &.received{
+    @apply flex justify-start w-full pl-2;
+
+    div.message-bubble{
+      @apply bg-green-400 relative flex-wrap h-fit w-fit p-2 rounded-se-md rounded-ee-md animate-fade-up max-w-96 text-start
+    }
+
+    div.message-bubble::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -10px; /* Posiciona a cauda à direita */
+      border-width: 10px 0px 10px 10px;
+      border-style: solid;
+      border-color: rgb(74 222 128) transparent transparent transparent; /* Cor da cauda azul */
+    }
+  }
+
+
+}
