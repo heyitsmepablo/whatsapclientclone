@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import OpenAI from 'openai';
 import { BehaviorSubject } from 'rxjs';
-import { environment } from '../../environments/environment.development';
-import { marked } from 'marked';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
-  clientAi = new OpenAI({apiKey:environment.OpenAiKey,dangerouslyAllowBrowser:true})
+  clientAi = new OpenAI({apiKey:"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",dangerouslyAllowBrowser:true})
   basePrompt =
   `
     Prompt para a IA Atendente Virtual
